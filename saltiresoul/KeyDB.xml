@@ -18,7 +18,7 @@
   </Overview>
   <Registry>https://registry.hub.docker.com/r/eqalpha/keydb/</Registry>
   <GitHub>https://github.com/Snapchat/KeyDB</GitHub>
-  <Repository>https://registry.hub.docker.com/r/eqalpha/keydb:alpine</Repository>
+  <Repository>eqalpha/keydb:alpine</Repository>
   <Support>https://forums.unraid.net/forum/47-docker-containers/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -31,5 +31,5 @@
   <Config Name="KeyDB Port" Target="6379" Default="6379" Mode="tcp" Description="KeyDB Port" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="AppData" Target="/data" Default="" Mode="rw" Description="Appdata folder for database persistence" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/keydb/data</Config>
   <Config Name="KeyDB Conf" Target="/etc/keydb/keydb.conf" Default="" Mode="rw" Description="KeyDB is able to start without a configuration file using a built-in default configuration" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/keydb/keydb.conf</Config>
-  <ExtraParams>keydb-server /etc/keydb/redis.conf --server-threads 2</ExtraParams>
+  <ExtraParams>keydb-server /etc/keydb/keydb.conf --server-threads 2</ExtraParams>
 </Container>
