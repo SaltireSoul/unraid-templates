@@ -8,7 +8,7 @@
   <Support>https://github.com/SaltireSoul/unraid-templates/issues/new/choose</Support>
   <Overview>KeyDB is a multithreaded fork of Redis,an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. Uses official KeyDB Docker image @ https://hub.docker.com/r/eqalpha/keydb &#xD;
   [br][br]&#xD;
-  Default config: https://github.com/Snapchat/KeyDB/raw/unstable/keydb.conf
+  Default config: https://github.com/Snapchat/KeyDB/raw/main/keydb.conf
   </Overview>
   <Category>Network:Management Productivity: Tools:</Category>
   <WebUI/>
